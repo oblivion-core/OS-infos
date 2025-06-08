@@ -1,0 +1,11 @@
+what happened when u wake your computer by clicking  the power on button : 
+-the ATX power supply detect that the computer is on by PS_ON signal  
+-the power supply unit activates and begins delivering full power(12V,6V..) to thhe motherboard before then the psu make sure that the voltage is stable 
+to send the power good signal to motherboard 
+-the motherboard chipset(set of electronics that control data flows between CPU and other components) receives power and then make sure 
+that every component of the pc is on known state and ready to function by a RESET signal (it's like 3.2.1 ready go)
+- in X86 the cpu after release of the RESET signal begins excuting at a memory address 0xFFFFFFF0 in real mode("real mode is like "the starter mode"
+for x86 cpu it can only access 1MB of memory bcz it's only use 16 bit register") we call that specific block of memory address "reset vector"
+
+
+
